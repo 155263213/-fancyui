@@ -1,0 +1,7 @@
+<li class="collage-item">
+    <div class="title" ng-click="vm.change()">
+        <span ng-class="{true:'glyphicon glyphicon-minus',false:'glyphicon glyphicon-plus'}[vm.open]"></span>
+        {{vm.title}}
+    </div>
+    <div class="content" ng-show="vm.open == true">{{vm.content}}</div>
+</li>

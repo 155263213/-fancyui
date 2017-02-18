@@ -525,5 +525,18 @@ export default [
     tracking: {
       key: 'message'
     }
+  },
+  {
+	name: 'collapse',
+	moduleName: {
+	  'en-us': 'Collapse',
+	  'zh-cn': '伸缩栏'
+	},
+	url: "/component/collapse",
+	template: '<collapse></collapse>',
+	lazyload: require("bundle-loader?lazy&name=collapse!../components/collapse/collapse.js"),
+	tracking: {
+	  key: 'collapse'
+	}
   }
 ]

@@ -59,7 +59,7 @@
 	color: #1f2f3d;
 	line-height: 1.8;
 }
-
+/*时间轴的那条线*/
 .change-log .timeline::before {
 	content: "";
 	width: 1px;
