@@ -1,7 +1,9 @@
-<li class="collage-item">
-    <div class="title" ng-click="vm.change()">
-        <span ng-class="{true:'glyphicon glyphicon-minus',false:'glyphicon glyphicon-plus'}[vm.open]"></span>
-        {{vm.title}}
-    </div>
-    <div class="content" ng-show="vm.open == true">{{vm.content}}</div>
-</li>
+<ul class="row" id="collageContainer">
+    <li class="collage-item" ng-repeat="item in vm.data track by $index">
+        <div class="title" ng-click="vm.change($index)">
+            <span ng-class="{true:'glyphicon glyphicon-minus',false:'glyphicon glyphicon-plus'}[item.open]" style="cursor: pointer;"></span>
+            {{item.title}}
+        </div>
+        <div class="content" ng-show="item.open == true" ng-class="{'open-content':item.open}">{{item.content}}</div>
+    </li>
+</ul>
